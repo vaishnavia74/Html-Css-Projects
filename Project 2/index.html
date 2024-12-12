@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <!-- emil shortcut : link:css (enter) -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="apply_box">
+            <h1>JOB APPLICATION
+                <!-- now using span tag to the word (web)-bring to same line  -->
+                 <span class="title_small">(Web)</span>
+            </h1>
+            <!-- using form tag  -->
+             <form action="">
+                <div class="form_container"> 
+
+                    <div class="form_control">
+                        <label for="first_name">First Name</label>
+                    <!-- to get cursor in 'enter value' paste the id value in label for=""    -->
+                        <input id="first_name" name="first_name" placeholder="Enter First Name..">
+                    <!-- use ctrl-d for selected word as many words and correct the error or rewrite the word  -->
+                    </div>
+
+                    <div class="form_control">
+                        <label for="last_name">Last Name</label>
+                        <input id="last_name" name="last_name" placeholder="Enter Last Name..">
+                    </div>
+                    
+                    <div class="form_control">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" placeholder="Enter Email..">
+                    </div>
+
+                    <div class="form_control">
+                        <label for="job_role">Job Role</label>
+                        <select name="job_role" id="job_role">
+                            <!-- here the value is null -->
+                            <option value="">Select Job role</option>
+                            <option value="frontend">Frontend Developer</option>
+                            <option value="backend">Backend Developer</option>
+                            <option value="full_stack">Full Stack Developer</option>
+                            <option value="ui_ux">UI UX Designer</option>
+                        </select>
+                    </div>
+
+                        <div class="form_control">
+                            <label for="address">Address</label>
+                            <textarea name="address" id="address" rows = "4" cols = "50" placeholder="Enter Address.."></textarea>
+                        </div>
+
+                        <div class="form_control">
+                            <label for="city">City</label>
+                            <input id="city" name="city" placeholder="Enter City Name..">
+                        </div>
+
+                        <div class="form_control">
+                            <label for="pincode">Pincode</label>
+                            <!-- to only cosider number values we give type value as number  -->
+                            <input type ="number" id="pincode" name="pincode" placeholder="Enter Pincode..">
+                        </div>
+
+                        <div class="form_control">
+                            <label for="date">Date</label>
+                            <input type ="date" id="date" name="date" placeholder="Enter Date..">
+                            <!-- We can give default date like, <input value = "2024-11-27" type ="date" id="date" name="date" placeholder="Enter Date..">  -->
+                        </div> 
+                        
+                        <div class="form_control">
+                            <label for="upload">Upload Your CV</label>
+                            <input type = "file" id="upload" name="upload">
+                        </div>
+                </div>
+            
+                <div class="button_container">
+                    <button type="submit">Apply Now</button>
+                </div>
+             </form>
+        </div>
+    </div>
+</body>
+</html>

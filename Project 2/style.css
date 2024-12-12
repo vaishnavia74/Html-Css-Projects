@@ -1,0 +1,95 @@
+/* here the browser gives a defaut styling but we removed the styling (reset)  */
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: gray;
+}
+
+.container{
+    max-width: 900px;
+     /* up and down width - (0) left and right - (auto)*/
+     margin: 0 auto;
+
+}
+
+.apply_box{
+    max-width: 600px;
+    /* all sides padding  */
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    /* margin top spacing  */
+    margin-top: 50px;
+    /* box shadow is the quardinate axis x, y, z  */
+    /* box-shadow: 4px 3px 5px; or  */
+    /* alpha in rgba can be 0 to 1  */
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+    /* adding curve to the corners */
+    border-radius: 10px;
+}
+
+.title_small{
+    font-size: 20px;
+}
+
+/* now using grid in css for alignment in css */
+.form_container {
+    margin-top: 20px;
+    display: grid; /*no change*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 11fr));
+    gap: 20px;
+}
+
+.form_control {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    /* up and down 6, left and right 10px  */
+    padding: 6px 10px;
+    border: 1px solid rgb(161, 158, 158);
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+/* when we select a particular blank it turns to color  */
+input:focus {
+    outline-color: rgb(58, 31, 210);
+}
+
+.button_container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+button {
+    background-color: rgb(50, 50, 235);
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 8px;
+    transition: 0.3s ease-in;
+}
+
+ /* now when we take cursor(hover) the button should change color to..  */
+ button:hover {
+    background-color: grey;
+    border: 2px sold blue;
+    color: black;
+    transition: 0.3s ease-out;
+    /* change cursor type  */
+    cursor: pointer;
+ }
+
+ /* learn address -  media query (for mobile view) video 3 refer  */
